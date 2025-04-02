@@ -1,0 +1,28 @@
+name: Run Godot GdUnit Tests
+
+
+on: 
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+
+jobs:
+  run_gdunit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: GdUnit4 - Test Runner Action
+        uses: MikeSchulze/gdUnit4-action@v1.1.1
+        with:
+          # The version of Godot in which the tests should be run.
+          godot-version: 4.4
+          paths: 'res://test/'
+          version: 'master'
+          timeout: 10
+          publish-report: false
