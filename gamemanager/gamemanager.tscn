@@ -33,5 +33,6 @@ unique_name_in_owner = true
 visible = false
 theme = ExtResource("3_8qpx4")
 
+[connection signal="continue_btn_pressed" from="MenuLayer/PauseMenu" to="." method="resume"]
 [connection signal="exit_game_btn_pressed" from="MenuLayer/PauseMenu" to="." method="_quit_game"]
 [connection signal="exit_to_main_menu_btn_pressed" from="MenuLayer/PauseMenu" to="." method="_return_to_title_screen"]

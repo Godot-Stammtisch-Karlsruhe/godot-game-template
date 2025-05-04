@@ -47,7 +47,7 @@ func _start_game() -> void:
 
 func pause():
 	InputManager.set_is_paused(true)
-	menu_layer.move_to_front()
+	move_child(menu_layer, -1)
 	pause_menu.move_to_front()
 	pause_menu.show()
 	get_tree().paused = true
@@ -99,7 +99,10 @@ func _reload_current_level() -> void:
 	if current_level_node != null:
 		current_level_node.queue_free()
 		current_level_node = null
-	_show_level(level)
+	if has_multiple_levels:
+		_show_level(level)
+	else:
+		_show_main_level()
 #endregion
 
 #region Showing Different GUI views 
