@@ -28,9 +28,12 @@ func _ready() -> void:
 	DebugGlobal.debug_label = %DebugLabel
 	for i in range(max_level): 
 		completed_levels.append(false)
-	# Load settings
-	Settings.load_config()
 	
+	# Settings
+	var user_settings = UserDefinedSettings.new()
+	user_settings._register_settings()
+	Settings.load_config()
+
 	# Connect to InputManager
 	InputManager.game_pause.connect(pause)
 	InputManager.game_unpause.connect(resume)
