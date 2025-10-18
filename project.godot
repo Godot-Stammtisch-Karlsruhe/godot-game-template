@@ -15,6 +15,10 @@ run/main_scene="res://gamemanager/gamemanager.tscn"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://other/default_bus_layout.tres"
+
 [autoload]
 
 InputManager="*res://autoloads/input_manager.gd"

@@ -1,6 +1,6 @@
 extends TabContainer
 
-@onready var action_remapping_button_scene: PackedScene = load("res://ui/components/settings-menu/action-remapping-button/action_remapping_button.tscn")
+@onready var action_remapping_button_scene: PackedScene = preload("uid://ngjm8kk8u7fm")
 
 func _ready() -> void:
 	_populate_menu()
@@ -182,4 +182,3 @@ func _update_remapping_button(value: Array[InputEvent], index: int, btn: Button)
 
 func _update_input_mapping_revert_button(p_setting_path: String, index: int, button: Button) -> void:
 	button.modulate = Color.WHITE if not Settings.is_input_binding_default(p_setting_path, index) else Color.TRANSPARENT
-

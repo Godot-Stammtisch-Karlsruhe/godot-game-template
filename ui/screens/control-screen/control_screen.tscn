@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://bpr6du5ydm0lw"]
 
-[ext_resource type="Texture2D" uid="uid://bugrq8paq2d7t" path="res://textures/Keycap.svg" id="1_hbk1g"]
-[ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/themes/your_theme.tres" id="1_x8l5g"]
+[ext_resource type="Texture2D" uid="uid://bugrq8paq2d7t" path="res://ui/screens/control-screen/Keycap.svg" id="1_hbk1g"]
+[ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/theme/your_theme.tres" id="1_x8l5g"]
 [ext_resource type="Script" uid="uid://c1i00arsdf2mw" path="res://ui/screens/control-screen/control_screen.gd" id="2_wdxwm"]
-[ext_resource type="Texture2D" uid="uid://bett8pw3uw006" path="res://textures/Space.svg" id="4_nvllw"]
-[ext_resource type="Texture2D" uid="uid://bhuy5siw5vkxi" path="res://textures/Mouse.svg" id="5_bb6ie"]
+[ext_resource type="Texture2D" uid="uid://bett8pw3uw006" path="res://ui/screens/control-screen/Space.svg" id="4_nvllw"]
+[ext_resource type="Texture2D" uid="uid://bhuy5siw5vkxi" path="res://ui/screens/control-screen/Mouse.svg" id="5_bb6ie"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_5tgjf"]
 font_size = 60
