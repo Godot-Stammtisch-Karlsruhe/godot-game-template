@@ -26,6 +26,16 @@ DebugGlobal="*res://autoloads/debug_global.gd"
 Global="*res://autoloads/global.gd"
 Settings="*res://autoloads/settings/settings.gd"
 
+[file_customization]
+
+folder_colors={
+"res://autoloads/": "gray",
+"res://gamemanager/": "yellow",
+"res://levels/": "blue",
+"res://other/": "purple",
+"res://ui/": "teal"
+}
+
 [input]
 
 pause={
