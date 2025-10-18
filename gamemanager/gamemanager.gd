@@ -23,16 +23,17 @@ var level = 0
 var completed_levels: Array[bool] = []
 var current_level_node: Node
 
+func _init():
+	# Settings
+	var user_settings = UserDefinedSettings.new()
+	user_settings._register_settings()
+	Settings.load_config()
+
 func _ready() -> void:
 	Global.set_game_manager(self)
 	DebugGlobal.debug_label = %DebugLabel
 	for i in range(max_level): 
 		completed_levels.append(false)
-	
-	# Settings
-	var user_settings = UserDefinedSettings.new()
-	user_settings._register_settings()
-	Settings.load_config()
 
 	# Connect to InputManager
 	InputManager.game_pause.connect(pause)
