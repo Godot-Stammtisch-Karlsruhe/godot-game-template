@@ -10,6 +10,7 @@
 process_mode = 3
 script = ExtResource("1_htktm")
 main_level = ExtResource("2_xueuq")
+has_multiple_levels = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("2_v1n10")
