@@ -28,27 +28,14 @@ grow_vertical = 2
 theme = ExtResource("1_x8l5g")
 script = ExtResource("2_wdxwm")
 
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
 [node name="ControlsTitle" type="Label" parent="."]
 custom_minimum_size = Vector2(731.345, 0)
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -576.0
-offset_top = 53.0
-offset_right = 576.0
-offset_bottom = 113.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 83.0
 grow_horizontal = 2
-text = "Controls
-"
+text = "Controls"
 label_settings = SubResource("LabelSettings_5tgjf")
 horizontal_alignment = 1
 autowrap_mode = 2
@@ -70,8 +57,7 @@ offset_top = -180.0
 offset_right = -65.0
 offset_bottom = -117.0
 scale = Vector2(4.75306, 4.39234)
-text = "W
-"
+text = "W"
 label_settings = SubResource("LabelSettings_27lof")
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -87,8 +73,7 @@ offset_top = -188.0
 offset_right = -45.0
 offset_bottom = -125.0
 scale = Vector2(4.75306, 4.39234)
-text = "A
-"
+text = "A"
 label_settings = SubResource("LabelSettings_27lof")
 horizontal_alignment = 1
 
@@ -104,7 +89,6 @@ offset_right = -45.0
 offset_bottom = -125.0
 scale = Vector2(4.75306, 4.39234)
 text = "S
-
 "
 label_settings = SubResource("LabelSettings_27lof")
 horizontal_alignment = 1
@@ -120,16 +104,15 @@ offset_top = -188.0
 offset_right = -45.0
 offset_bottom = -125.0
 scale = Vector2(4.75306, 4.39234)
-text = "D
-"
+text = "D"
 label_settings = SubResource("LabelSettings_27lof")
 horizontal_alignment = 1
 
 [node name="Move" type="Label" parent="ControlImages/WASD"]
 offset_left = -61.8705
 offset_top = 56.1151
-offset_right = 150.13
-offset_bottom = 166.115
+offset_right = 97.1295
+offset_bottom = 139.1151
 text = "Move"
 label_settings = SubResource("LabelSettings_jpaqh")
 
@@ -153,8 +136,8 @@ horizontal_alignment = 1
 [node name="Jump" type="Label" parent="ControlImages/Space"]
 offset_left = -62.5036
 offset_top = 40.9209
-offset_right = 149.496
-offset_bottom = 150.921
+offset_right = 88.4964
+offset_bottom = 123.9209
 text = "Jump"
 label_settings = SubResource("LabelSettings_jpaqh")
 
