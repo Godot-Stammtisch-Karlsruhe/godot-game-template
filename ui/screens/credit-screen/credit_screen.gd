@@ -10,6 +10,7 @@ func _ready() -> void:
 	var creds: Array[CreditEntry] = _dicts_to_entry(_read_credits())
 	for c in creds:
 		var b: CreditButton = credit_button_scene.instantiate()
+		b.display_license.connect(display_license)
 		b.set_credit(c)
 		$VBoxContainer/ScrollContainer/VBoxContainer/VBoxContainer.add_child(b)
 	$VBoxContainer/ScrollContainer.scroll_vertical = 0
@@ -73,3 +74,11 @@ func _on_detailed_g_credits_pressed() -> void:
 		$DetailedGCredits.text = "Return to Credits"
 	else:
 		$DetailedGCredits.text = "Show detailed Godot Credits"
+
+func display_license(credit: CreditEntry) -> void:
+	$LicenseText.visible = true
+	$LicenseText/VBoxContainer/Label.text = credit.name
+	$LicenseText/VBoxContainer/ScrollContainer/Label.text = credit.license
+
+func _on_close_licence_text_pressed() -> void:
+	$LicenseText.visible = false
