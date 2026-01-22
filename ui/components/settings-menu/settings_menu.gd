@@ -182,4 +182,3 @@ func _update_remapping_button(value: Array[InputEvent], index: int, btn: Button)
 
 func _update_input_mapping_revert_button(p_setting_path: String, index: int, button: Button) -> void:
 	button.modulate = Color.WHITE if not Settings.is_input_binding_default(p_setting_path, index) else Color.TRANSPARENT
-

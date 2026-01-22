@@ -3,7 +3,7 @@ extends Control
 @export var credits: String
 
 func _ready() -> void:
-	
+	$VBoxContainer/Return.grab_focus()
 	
 	var credit_button_scene = load("res://ui/screens/credit-screen/credit_element.tscn")
 	

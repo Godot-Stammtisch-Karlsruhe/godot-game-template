@@ -6,6 +6,9 @@ signal show_level_select()
 signal show_settings_screen()
 signal quit()
 
+func _ready():
+	$CenterContainer2/VBoxContainer/Start.grab_focus()
+
 func _on_start_pressed() -> void:
 	start_game.emit()
 	queue_free()

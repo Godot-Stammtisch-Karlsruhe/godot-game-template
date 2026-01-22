@@ -78,6 +78,7 @@ size_flags_vertical = 4
 text = "Save and back"
 
 [connection signal="pressed" from="CenterContainer/MainPauseMenuPopup/VBoxContainer/ContinueBtn" to="." method="_on_btn_continue_pressed"]
+[connection signal="visibility_changed" from="CenterContainer/MainPauseMenuPopup/VBoxContainer/ContinueBtn" to="." method="_on_continue_btn_visibility_changed"]
 [connection signal="pressed" from="CenterContainer/MainPauseMenuPopup/VBoxContainer/SettingsButton" to="." method="_on_btn_settings_pressed"]
 [connection signal="pressed" from="CenterContainer/MainPauseMenuPopup/VBoxContainer/ExitToMainMenuBtn" to="." method="_on_btn_exit_to_main_menu_pressed"]
 [connection signal="pressed" from="CenterContainer/MainPauseMenuPopup/VBoxContainer/ExitGameBtn" to="." method="_on_btn_exit_game_pressed"]

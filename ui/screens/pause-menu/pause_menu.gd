@@ -5,6 +5,7 @@ signal settings_btn_pressed
 signal exit_to_main_menu_btn_pressed
 signal exit_game_btn_pressed
 
+
 func reset():
 	%SettingsMenuPopup.hide()
 	%MainPauseMenuPopup.show()
@@ -29,3 +30,8 @@ func _on_btn_exit_game_pressed():
 func _on_save_and_back_btn_pressed():
 	Settings.save_config()
 	reset()
+
+
+func _on_continue_btn_visibility_changed() -> void:
+	if visible:
+		$CenterContainer/MainPauseMenuPopup/VBoxContainer/ContinueBtn.grab_focus()
