@@ -15,9 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Godot Game Template"
-run/main_scene="res://gamemanager/gamemanager.tscn"
+run/main_scene="res://core/gamemanager.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="res://core/default_bus_layout.tres"
 
 [autoload]
 
@@ -29,6 +33,15 @@ Settings="*res://autoloads/settings/settings.gd"
 [display]
 
 window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://autoloads/": "gray",
+"res://core/": "red",
+"res://levels/": "blue",
+"res://ui/": "teal"
+}
 
 [input]
 

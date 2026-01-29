@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b23e4kqj4o6dv"
-path="res://.godot/imported/Revert.svg-e5ce4f9d359d5918460dc90c474622ee.ctex"
+path="res://.godot/imported/Revert.svg-83732f7446608123e95cc2f2a2cf35c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Revert.svg"
-dest_files=["res://.godot/imported/Revert.svg-e5ce4f9d359d5918460dc90c474622ee.ctex"]
+source_file="res://ui/components/settings-menu/Revert.svg"
+dest_files=["res://.godot/imported/Revert.svg-83732f7446608123e95cc2f2a2cf35c6.ctex"]
 
 [params]
 

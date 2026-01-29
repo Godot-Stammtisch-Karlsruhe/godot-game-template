@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://hheneshfv1b2"]
 
-[ext_resource type="Texture2D" uid="uid://b23e4kqj4o6dv" path="res://textures/Revert.svg" id="1_r1020"]
+[ext_resource type="Texture2D" uid="uid://b23e4kqj4o6dv" path="res://ui/components/settings-menu/Revert.svg" id="1_r1020"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0d4dl"]
 content_margin_left = 8.0
