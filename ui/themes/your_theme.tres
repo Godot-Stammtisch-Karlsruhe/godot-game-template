@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://hheneshfv1b2"]
+[gd_resource type="Theme" format=3 uid="uid://hheneshfv1b2"]
 
 [ext_resource type="Texture2D" uid="uid://b23e4kqj4o6dv" path="res://textures/Revert.svg" id="1_r1020"]
 

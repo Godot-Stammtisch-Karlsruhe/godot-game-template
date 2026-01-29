@@ -26,6 +26,10 @@ DebugGlobal="*res://autoloads/debug_global.gd"
 Global="*res://autoloads/global.gd"
 Settings="*res://autoloads/settings/settings.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 pause={

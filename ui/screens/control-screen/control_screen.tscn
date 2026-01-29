@@ -1,24 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://bpr6du5ydm0lw"]
+[gd_scene format=3 uid="uid://bpr6du5ydm0lw"]
 
-[ext_resource type="Texture2D" uid="uid://bugrq8paq2d7t" path="res://textures/Keycap.svg" id="1_hbk1g"]
 [ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/themes/your_theme.tres" id="1_x8l5g"]
 [ext_resource type="Script" uid="uid://c1i00arsdf2mw" path="res://ui/screens/control-screen/control_screen.gd" id="2_wdxwm"]
-[ext_resource type="Texture2D" uid="uid://bett8pw3uw006" path="res://textures/Space.svg" id="4_nvllw"]
-[ext_resource type="Texture2D" uid="uid://bhuy5siw5vkxi" path="res://textures/Mouse.svg" id="5_bb6ie"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_5tgjf"]
 font_size = 60
 
-[sub_resource type="LabelSettings" id="LabelSettings_27lof"]
-font_size = 41
-
-[sub_resource type="LabelSettings" id="LabelSettings_jpaqh"]
-font_size = 60
-
-[sub_resource type="LabelSettings" id="LabelSettings_7ean5"]
-font_size = 60
-
-[node name="ControlScreen" type="Control"]
+[node name="ControlScreen" type="Control" unique_id=707664794]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +16,7 @@ grow_vertical = 2
 theme = ExtResource("1_x8l5g")
 script = ExtResource("2_wdxwm")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=1329424348]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -36,168 +24,51 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ControlsTitle" type="Label" parent="."]
+[node name="ControlsTitle" type="Label" parent="." unique_id=1553206497]
 custom_minimum_size = Vector2(731.345, 0)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -576.0
-offset_top = 53.0
+offset_top = 25.0
 offset_right = 576.0
-offset_bottom = 113.0
+offset_bottom = 108.0
 grow_horizontal = 2
-text = "Controls
-"
+text = "Controls"
 label_settings = SubResource("LabelSettings_5tgjf")
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="ControlImages" type="Node2D" parent="."]
-position = Vector2(306, 378)
-scale = Vector2(0.695, 0.695)
-
-[node name="WASD" type="Node2D" parent="ControlImages"]
-
-[node name="TextureRect" type="Sprite2D" parent="ControlImages/WASD"]
-position = Vector2(-32.75, -88.75)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_hbk1g")
-
-[node name="W" type="Label" parent="ControlImages/WASD/TextureRect"]
-offset_left = -108.0
-offset_top = -180.0
-offset_right = -65.0
-offset_bottom = -117.0
-scale = Vector2(4.75306, 4.39234)
-text = "W
-"
-label_settings = SubResource("LabelSettings_27lof")
-horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect2" type="Sprite2D" parent="ControlImages/WASD"]
-position = Vector2(-88.75, 7.25)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_hbk1g")
-
-[node name="A" type="Label" parent="ControlImages/WASD/TextureRect2"]
-offset_left = -80.0
-offset_top = -188.0
-offset_right = -45.0
-offset_bottom = -125.0
-scale = Vector2(4.75306, 4.39234)
-text = "A
-"
-label_settings = SubResource("LabelSettings_27lof")
-horizontal_alignment = 1
-
-[node name="TextureRect3" type="Sprite2D" parent="ControlImages/WASD"]
-position = Vector2(7.25, 7.25)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_hbk1g")
-
-[node name="S" type="Label" parent="ControlImages/WASD/TextureRect3"]
-offset_left = -80.0
-offset_top = -188.0
-offset_right = -45.0
-offset_bottom = -125.0
-scale = Vector2(4.75306, 4.39234)
-text = "S
-
-"
-label_settings = SubResource("LabelSettings_27lof")
-horizontal_alignment = 1
-
-[node name="TextureRect4" type="Sprite2D" parent="ControlImages/WASD"]
-position = Vector2(103.25, 7.25)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_hbk1g")
-
-[node name="D" type="Label" parent="ControlImages/WASD/TextureRect4"]
-offset_left = -80.0
-offset_top = -188.0
-offset_right = -45.0
-offset_bottom = -125.0
-scale = Vector2(4.75306, 4.39234)
-text = "D
-"
-label_settings = SubResource("LabelSettings_27lof")
-horizontal_alignment = 1
-
-[node name="Move" type="Label" parent="ControlImages/WASD"]
-offset_left = -61.8705
-offset_top = 56.1151
-offset_right = 150.13
-offset_bottom = 166.115
-text = "Move"
-label_settings = SubResource("LabelSettings_jpaqh")
-
-[node name="Space" type="Node2D" parent="ControlImages"]
-position = Vector2(392, 8)
-
-[node name="Space2" type="Sprite2D" parent="ControlImages/Space"]
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("4_nvllw")
-
-[node name="W" type="Label" parent="ControlImages/Space/Space2"]
-offset_left = -288.0
-offset_top = -176.0
-offset_right = -161.0
-offset_bottom = -113.0
-scale = Vector2(4.75306, 4.39234)
-text = "Space"
-label_settings = SubResource("LabelSettings_27lof")
-horizontal_alignment = 1
-
-[node name="Jump" type="Label" parent="ControlImages/Space"]
-offset_left = -62.5036
-offset_top = 40.9209
-offset_right = 149.496
-offset_bottom = 150.921
-text = "Jump"
-label_settings = SubResource("LabelSettings_jpaqh")
-
-[node name="Mouse" type="Node2D" parent="ControlImages"]
-position = Vector2(800, -35.9712)
-
-[node name="Mouse2" type="Sprite2D" parent="ControlImages/Mouse"]
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("5_bb6ie")
-
-[node name="R+L" type="Label" parent="ControlImages/Mouse"]
-offset_left = -212.719
-offset_top = -228.374
-offset_right = 310.281
-offset_bottom = -118.374
-text = "Action     Action"
-label_settings = SubResource("LabelSettings_7ean5")
-
-[node name="Line2D" type="Line2D" parent="ControlImages/Mouse"]
-points = PackedVector2Array(-123.511, -134.849, -31.4243, -70.1007)
-
-[node name="Line2D2" type="Line2D" parent="ControlImages/Mouse"]
-points = PackedVector2Array(103.827, -136.288, 36.2015, -68.6619)
-
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="ControlsTitle2" type="Label" parent="." unique_id=394444381]
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.5
+offset_top = -11.5
+offset_right = 86.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Put your controls here"
+horizontal_alignment = 1
+
+[node name="Continue" type="Button" parent="." unique_id=426511693]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-offset_top = -63.0
+offset_left = -39.5
+offset_top = -58.0
+offset_right = 39.5
+offset_bottom = -27.0
 grow_horizontal = 2
 grow_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="CenterContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_top = 30
-theme_override_constants/margin_right = 30
-theme_override_constants/margin_bottom = 30
-
-[node name="Continue" type="Button" parent="CenterContainer/MarginContainer"]
-layout_mode = 2
 text = "Continue"
 
-[connection signal="pressed" from="CenterContainer/MarginContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
