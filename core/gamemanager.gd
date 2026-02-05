@@ -66,10 +66,18 @@ func resume():
 
 #region Level Loading
 
+func _unload_current_level() -> void:
+	if current_level_node != null:
+		current_level_node.queue_free()
+		current_level_node = null
+
 func _show_main_level() -> void:
+	if main_level == null:
+		push_error("main_level is not set in GameManager")
+		return
+
 	InputManager.set_is_in_game(true)
 	var next_level: Node = main_level.instantiate()
-	InputManager.set_is_in_game(true)
 	if next_level.has_signal("win"):
 		next_level.win.connect(_next_level)
 	if next_level.has_signal("reset"):
@@ -79,6 +87,8 @@ func _show_main_level() -> void:
 	
 
 func _next_level() -> void:
+	_unload_current_level()
+
 	if level < max_level and max_level > 0:
 		InputManager.set_is_in_game(true)
 		level += 1
@@ -88,6 +98,9 @@ func _next_level() -> void:
 		_show_win_screen()
 
 func _show_level(level_nr: int) -> void:
+	# Clean up previous level if it exists (when coming from level select)
+	_unload_current_level()
+
 	InputManager.set_is_in_game(true)
 	level = level_nr
 	var next_level = load(level_location % str(level)).instantiate()
@@ -99,10 +112,8 @@ func _show_level(level_nr: int) -> void:
 	current_level_node = next_level
 	
 func _reload_current_level() -> void:
-	# Destroy level
-	if current_level_node != null:
-		current_level_node.queue_free()
-		current_level_node = null
+	_unload_current_level()
+
 	if has_multiple_levels:
 		_show_level(level)
 	else:
