@@ -37,6 +37,7 @@ func _ready() -> void:
 	# Connect to InputManager
 	InputManager.game_pause.connect(pause)
 	InputManager.game_unpause.connect(resume)
+	InputManager.capture_mouse_ingame = is_mouse_captured_in_level
 	InputManager.set_is_in_game(false)
 	InputManager.set_is_paused(false)
 	
