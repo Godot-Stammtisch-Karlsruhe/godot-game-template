@@ -3,7 +3,7 @@ extends TabContainer
 @onready var action_remapping_button_scene: PackedScene = load("res://ui/components/settings-menu/action-remapping-button/action_remapping_button.tscn")
 
 func _ready() -> void:
-	_populate_menu()
+	call_deferred("_populate_menu")
 
 func _populate_menu() -> void:
 	var tab_idx = 0

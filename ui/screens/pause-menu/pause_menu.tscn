@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bilai15byqef2"]
+[gd_scene format=3 uid="uid://bilai15byqef2"]
 
 [ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/themes/your_theme.tres" id="1_0kumn"]
 [ext_resource type="Script" uid="uid://2n7o5t6b5g4w" path="res://ui/screens/pause-menu/pause_menu.gd" id="2_0mnak"]
 [ext_resource type="PackedScene" uid="uid://cv271fh4d2p13" path="res://ui/components/settings-menu/settings_menu.tscn" id="4_e3p6x"]
 
-[node name="PauseMenuScreen" type="Control"]
+[node name="PauseMenuScreen" type="Control" unique_id=2087442611]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_0mnak")
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=983714819]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,56 +22,56 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_0kumn")
 
-[node name="MainPauseMenuPopup" type="PanelContainer" parent="CenterContainer"]
+[node name="MainPauseMenuPopup" type="PanelContainer" parent="CenterContainer" unique_id=1216636000]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MainPauseMenuPopup"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/MainPauseMenuPopup" unique_id=1361849718]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 
-[node name="PausedLbl" type="Label" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer"]
+[node name="PausedLbl" type="Label" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer" unique_id=338515519]
 layout_mode = 2
 theme_type_variation = &"HeaderMedium"
 text = "Paused"
 horizontal_alignment = 1
 
-[node name="ContinueBtn" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer"]
+[node name="ContinueBtn" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer" unique_id=2012541750]
 layout_mode = 2
 text = "Continue"
 
-[node name="SettingsButton" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer"]
+[node name="SettingsButton" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer" unique_id=1680382734]
 layout_mode = 2
 text = "Settings"
 
-[node name="ExitToMainMenuBtn" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer"]
+[node name="ExitToMainMenuBtn" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer" unique_id=300221649]
 layout_mode = 2
 text = "Quit to title screen"
 
-[node name="ExitGameBtn" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer"]
+[node name="ExitGameBtn" type="Button" parent="CenterContainer/MainPauseMenuPopup/VBoxContainer" unique_id=104298902]
 layout_mode = 2
 text = "Quit game"
 
-[node name="SettingsMenuPopup" type="PanelContainer" parent="CenterContainer"]
+[node name="SettingsMenuPopup" type="PanelContainer" parent="CenterContainer" unique_id=1654694978]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 theme = ExtResource("1_0kumn")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/SettingsMenuPopup"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/SettingsMenuPopup" unique_id=680704985]
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="Label" type="Label" parent="CenterContainer/SettingsMenuPopup/VBoxContainer"]
+[node name="Label" type="Label" parent="CenterContainer/SettingsMenuPopup/VBoxContainer" unique_id=547993980]
 layout_mode = 2
 theme_type_variation = &"HeaderMedium"
 text = "Settings"
 horizontal_alignment = 1
 
-[node name="SettingsMenu" parent="CenterContainer/SettingsMenuPopup/VBoxContainer" instance=ExtResource("4_e3p6x")]
+[node name="SettingsMenu" parent="CenterContainer/SettingsMenuPopup/VBoxContainer" unique_id=1510978317 instance=ExtResource("4_e3p6x")]
 layout_mode = 2
 
-[node name="SaveAndBackBtn" type="Button" parent="CenterContainer/SettingsMenuPopup/VBoxContainer"]
+[node name="SaveAndBackBtn" type="Button" parent="CenterContainer/SettingsMenuPopup/VBoxContainer" unique_id=312254833]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
