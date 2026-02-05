@@ -16,8 +16,6 @@ environment = ExtResource("2_v1n10")
 
 [node name="MenuLayer" type="CanvasLayer" parent="." unique_id=1393391734]
 unique_name_in_owner = true
-layer = 0
-follow_viewport_enabled = true
 
 [node name="DebugLabel" type="Label" parent="MenuLayer" unique_id=2133776147]
 unique_name_in_owner = true
