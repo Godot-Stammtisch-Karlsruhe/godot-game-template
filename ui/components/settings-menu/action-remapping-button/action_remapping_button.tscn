@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ngjm8kk8u7fm"]
+[gd_scene format=3 uid="uid://ngjm8kk8u7fm"]
 
 [ext_resource type="Script" uid="uid://b7fb4ravo24q0" path="res://ui/components/settings-menu/action-remapping-button/action_remapping_button.gd" id="1_jb8u1"]
 
-[node name="InputRemappingButton" type="Button"]
+[node name="InputRemappingButton" type="Button" unique_id=740968636]
 custom_minimum_size = Vector2(200, 0)
 toggle_mode = true
 text_overrun_behavior = 3

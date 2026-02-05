@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cv271fh4d2p13"]
+[gd_scene format=3 uid="uid://cv271fh4d2p13"]
 
 [ext_resource type="Script" uid="uid://ij8xcd6np4vt" path="res://ui/components/settings-menu/settings_menu.gd" id="1_eae2p"]
 [ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/themes/your_theme.tres" id="1_scglv"]
 
-[node name="SettingsMenu" type="TabContainer"]
+[node name="SettingsMenu" type="TabContainer" unique_id=1538995254]
 clip_contents = true
 custom_minimum_size = Vector2(600, 400)
 size_flags_vertical = 3

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://fd3xmnc047tm"]
+[gd_scene format=3 uid="uid://fd3xmnc047tm"]
 
 [ext_resource type="Script" uid="uid://dx5iawpcgwhlm" path="res://ui/screens/credit-screen/credit_screen.gd" id="1_h6a2t"]
 [ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/themes/your_theme.tres" id="2_dvsi5"]
@@ -9,7 +9,7 @@ font_size = 22
 [sub_resource type="LabelSettings" id="LabelSettings_r8dx7"]
 font_size = 12
 
-[node name="CreditScreen" type="MarginContainer"]
+[node name="CreditScreen" type="MarginContainer" unique_id=554750649]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -19,22 +19,22 @@ theme = ExtResource("2_dvsi5")
 script = ExtResource("1_h6a2t")
 credits = "res://ui/screens/credit-screen/credits.json"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1426215384]
 layout_mode = 2
 alignment = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=193875904]
 layout_mode = 2
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer" unique_id=1766199227]
 custom_minimum_size = Vector2(700, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 3
 
-[node name="LabelCredits" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+[node name="LabelCredits" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=500318037]
 custom_minimum_size = Vector2(731.345, 0)
 layout_mode = 2
 theme_type_variation = &"HeaderLarge"
@@ -42,41 +42,41 @@ text = "Credits"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Spacer2" type="Control" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+[node name="Spacer2" type="Control" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=341639053]
 custom_minimum_size = Vector2(0, 27.17)
 layout_mode = 2
 
-[node name="LabelCreatedBy" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+[node name="LabelCreatedBy" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=1161453390]
 layout_mode = 2
 text = "Created by You"
 label_settings = SubResource("LabelSettings_cutkl")
 horizontal_alignment = 1
 
-[node name="LabelSpecialThanks" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+[node name="LabelSpecialThanks" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=1866642574]
 layout_mode = 2
 text = "Special thanks to Also You"
 horizontal_alignment = 1
 
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=123317386]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer" unique_id=1405225546]
 layout_mode = 2
 
-[node name="Godot3PCredits" type="Label" parent="VBoxContainer/ScrollContainer"]
+[node name="Godot3PCredits" type="Label" parent="VBoxContainer/ScrollContainer" unique_id=1092186786]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 label_settings = SubResource("LabelSettings_r8dx7")
 
-[node name="Return" type="Button" parent="VBoxContainer"]
+[node name="Return" type="Button" parent="VBoxContainer" unique_id=464459005]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Return to Main Menu
 "
 
-[node name="DetailedGCredits" type="Button" parent="."]
+[node name="DetailedGCredits" type="Button" parent="." unique_id=729625426]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -84,29 +84,29 @@ theme_override_font_sizes/font_size = 12
 text = "Show detailed Godot Credits"
 flat = true
 
-[node name="LicenseText" type="PanelContainer" parent="."]
+[node name="LicenseText" type="PanelContainer" parent="." unique_id=1702054193]
 visible = false
 layout_mode = 2
 theme = ExtResource("2_dvsi5")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="LicenseText"]
+[node name="VBoxContainer" type="VBoxContainer" parent="LicenseText" unique_id=1286974170]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="LicenseText/VBoxContainer"]
+[node name="Label" type="Label" parent="LicenseText/VBoxContainer" unique_id=426678051]
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("2_dvsi5")
 theme_type_variation = &"HeaderMedium"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="LicenseText/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="LicenseText/VBoxContainer" unique_id=1054289490]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="LicenseText/VBoxContainer/ScrollContainer"]
+[node name="Label" type="Label" parent="LicenseText/VBoxContainer/ScrollContainer" unique_id=589755459]
 layout_mode = 2
 size_flags_horizontal = 6
 
-[node name="CloseLicense" type="Button" parent="LicenseText/VBoxContainer"]
+[node name="CloseLicense" type="Button" parent="LicenseText/VBoxContainer" unique_id=102920052]
 layout_mode = 2
 size_flags_vertical = 4
 text = "Close"

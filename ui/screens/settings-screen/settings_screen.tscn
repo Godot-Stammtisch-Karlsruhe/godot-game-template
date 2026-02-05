@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://ywybicp1ess8"]
+[gd_scene format=3 uid="uid://ywybicp1ess8"]
 
 [ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/themes/your_theme.tres" id="1_i4lq1"]
 [ext_resource type="Script" uid="uid://roiysiotwsbq" path="res://ui/screens/settings-screen/settings_screen.gd" id="2_ck7g6"]
 [ext_resource type="PackedScene" uid="uid://cv271fh4d2p13" path="res://ui/components/settings-menu/settings_menu.tscn" id="4_i4lq1"]
 
-[node name="OptionsMenu" type="MarginContainer"]
+[node name="OptionsMenu" type="MarginContainer" unique_id=420614935]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -18,13 +18,13 @@ theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 script = ExtResource("2_ck7g6")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1967046289]
 custom_minimum_size = Vector2(450, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 10
 
-[node name="OptionsTitle" type="Label" parent="VBoxContainer"]
+[node name="OptionsTitle" type="Label" parent="VBoxContainer" unique_id=1806842321]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_vertical = 0
@@ -33,11 +33,11 @@ text = "Options"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="SettingsMenu" parent="VBoxContainer" instance=ExtResource("4_i4lq1")]
+[node name="SettingsMenu" parent="VBoxContainer" unique_id=784596614 instance=ExtResource("4_i4lq1")]
 custom_minimum_size = Vector2(800, 400)
 layout_mode = 2
 
-[node name="Return" type="Button" parent="VBoxContainer"]
+[node name="Return" type="Button" parent="VBoxContainer" unique_id=1869177324]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4

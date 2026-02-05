@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccrodv5x16nay"]
+[gd_scene format=3 uid="uid://ccrodv5x16nay"]
 
 [ext_resource type="Script" uid="uid://dwav7d4amw8yu" path="res://ui/screens/level-select-screen/level_button.gd" id="1_ej8yx"]
 
-[node name="LevelButton" type="Button"]
+[node name="LevelButton" type="Button" unique_id=923151870]
 custom_minimum_size = Vector2(90, 90)
 offset_right = 8.0
 offset_bottom = 8.0

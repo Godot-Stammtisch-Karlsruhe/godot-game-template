@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhqw5lfvaq0bg"]
+[gd_scene format=3 uid="uid://bhqw5lfvaq0bg"]
 
 [ext_resource type="Script" uid="uid://6q5m84onxilu" path="res://ui/screens/credit-screen/credit_element.gd" id="1_ukcj5"]
 
@@ -7,7 +7,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_p0wxk"]
 font_size = 12
 
-[node name="Credit" type="VBoxContainer"]
+[node name="Credit" type="VBoxContainer" unique_id=69516036]
 offset_right = 40.0
 offset_bottom = 40.0
 size_flags_horizontal = 3
@@ -15,21 +15,21 @@ theme_override_constants/separation = 0
 alignment = 1
 script = ExtResource("1_ukcj5")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=599791176]
 layout_mode = 2
 
-[node name="CreditButton" type="Button" parent="HBoxContainer"]
+[node name="CreditButton" type="Button" parent="HBoxContainer" unique_id=955063757]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 20
 theme_override_styles/focus = SubResource("StyleBoxEmpty_2mwwd")
 flat = true
 
-[node name="LicenseButton" type="Button" parent="HBoxContainer"]
+[node name="LicenseButton" type="Button" parent="HBoxContainer" unique_id=351433666]
 layout_mode = 2
 text = "License"
 
-[node name="DescribtorLabel" type="Label" parent="."]
+[node name="DescribtorLabel" type="Label" parent="." unique_id=322246210]
 modulate = Color(1, 1, 1, 0.670588)
 layout_mode = 2
 label_settings = SubResource("LabelSettings_p0wxk")

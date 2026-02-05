@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cv82k2twxie3n"]
+[gd_scene format=3 uid="uid://cv82k2twxie3n"]
 
 [ext_resource type="Theme" uid="uid://hheneshfv1b2" path="res://ui/themes/your_theme.tres" id="1_cpj7q"]
 [ext_resource type="Script" uid="uid://d2i8k7votngvg" path="res://ui/screens/level-select-screen/level_select.gd" id="2_lcog6"]
@@ -6,7 +6,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_mfdjd"]
 font_size = 60
 
-[node name="LevelSelect" type="MarginContainer" node_paths=PackedStringArray("buttonContainer")]
+[node name="LevelSelect" type="MarginContainer" unique_id=1286521924 node_paths=PackedStringArray("buttonContainer")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -20,10 +20,10 @@ theme_override_constants/margin_bottom = 10
 script = ExtResource("2_lcog6")
 buttonContainer = NodePath("VBoxContainer/HFlowContainer")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1716877818]
 layout_mode = 2
 
-[node name="LevelSelectTitle" type="Label" parent="VBoxContainer"]
+[node name="LevelSelectTitle" type="Label" parent="VBoxContainer" unique_id=1290767086]
 custom_minimum_size = Vector2(731.345, 0)
 layout_mode = 2
 text = "Level Select"
@@ -31,11 +31,11 @@ label_settings = SubResource("LabelSettings_mfdjd")
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Spacer" type="Control" parent="VBoxContainer"]
+[node name="Spacer" type="Control" parent="VBoxContainer" unique_id=1769227168]
 custom_minimum_size = Vector2(0, 28)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=878866277]
 layout_mode = 2
 text = "This Level Select Screen is provided by the template.
 
@@ -44,20 +44,20 @@ Numbered buttons related to a given level will be displayed here, if multiple_le
 The default location for levels ist the 'levels/' Folder with levels using the \"level_x.tscn\" naming scheme."
 horizontal_alignment = 1
 
-[node name="HFlowContainer" type="HFlowContainer" parent="VBoxContainer"]
+[node name="HFlowContainer" type="HFlowContainer" parent="VBoxContainer" unique_id=2027526310]
 layout_mode = 2
 alignment = 1
 
-[node name="Control" type="HBoxContainer" parent="VBoxContainer"]
+[node name="Control" type="HBoxContainer" parent="VBoxContainer" unique_id=1711230144]
 layout_mode = 2
 size_flags_vertical = 10
 
-[node name="UnlockLevels" type="CheckButton" parent="VBoxContainer/Control"]
+[node name="UnlockLevels" type="CheckButton" parent="VBoxContainer/Control" unique_id=1583371876]
 layout_mode = 2
 size_flags_horizontal = 10
 text = "Unlock all Levels"
 
-[node name="Return" type="Button" parent="VBoxContainer"]
+[node name="Return" type="Button" parent="VBoxContainer" unique_id=2120122741]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Return to Main Menu"
