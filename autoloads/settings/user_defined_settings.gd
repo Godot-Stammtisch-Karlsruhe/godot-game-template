@@ -160,12 +160,12 @@ func _set_aa_mode_2d(mode_string: String):
 #region Audio Settings Callbacks
 
 func _set_audio_bus_volume(volume: float, bus: AudioBus):
-	volume = lerp(-20, 0, volume / 100.0)
+	volume /= 100.0
 	match bus:
-		AudioBus.MASTER: AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), volume)
-		AudioBus.MUSIC: AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), volume)
-		AudioBus.SFX: AudioServer.set_bus_volume_db(AudioServer.get_bus_index("SFX"), volume)
-		AudioBus.VOICE: AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Voice"), volume)
+		AudioBus.MASTER: AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Master"), volume)
+		AudioBus.MUSIC: AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Music"), volume)
+		AudioBus.SFX: AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("SFX"), volume)
+		AudioBus.VOICE: AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Voice"), volume)
 
 #endregion
 
